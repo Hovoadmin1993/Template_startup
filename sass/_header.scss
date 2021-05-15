@@ -1,0 +1,64 @@
+.header{
+    min-height: 100vh;
+    background-image: url(../img/mac.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    position: relative;
+    filter: grayscale(50%);
+    @media screen and(max-width:730px) {
+        padding: 30px;
+    }
+    h1{
+        font-size: 64px;
+        color: $color;
+        transition: all .3s linear;
+        @media screen and(max-width:970px) {
+            font-size: 45px;
+        }
+        @media screen and(max-width:730px) {
+            font-size: 29px;
+        }
+    }
+    p{
+        font-size: 18px;
+        color: $color;
+        margin: 40px 0;
+    }
+    button{
+        padding: 12px 24px;
+        background-color: #ccc;
+        opacity: .60;
+        outline: none;
+        border: none;
+        transition: all .1s linear;
+        width: 300px;
+        font-size: 18px;
+        margin-top: 20px;
+        line-height: 1.8;
+        cursor: pointer;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    .icons{
+        position: absolute;
+        bottom: 40px;
+        i{
+            color: #ccc;
+            transition: all .1s linear;
+            font-size: 18px;
+            margin-right: 3px;
+            margin-left: 3px;
+            cursor: pointer;
+            &:hover{
+                color: $color;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins";
+@import "nav";
+@import "header";
+@import "about";
+@import "phone";
+@import "team";
+@import "work";
+@import "skils";
+@import "pricing";
+@import "contact";
+@import "footer";
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.gray{
+    background-color: $bgc;
+    color: $color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    @media screen and(max-width:600px) {
+         flex-direction: column;
+         height: auto;
+         justify-content: center;
+    }
+    .pnum{
+        font-family: "Georgia";
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .pstr{
+        font-size: 15px;
+        font-weight: 400;
+    }
+}

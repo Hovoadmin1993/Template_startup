@@ -1,0 +1,94 @@
+.skils{
+    padding: 130px 20px;
+    background-color: $bgc2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap:20px;
+    @media screen and(max-width:991px) {
+        grid-template-columns: 1fr;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 400;
+        font-family: georgia;
+    }
+    .pe{
+        margin: 20px 0;
+        width: 500px;
+        font-size: 15px;
+        line-height: 1.8;
+        @media screen and(max-width:567px) {
+            width: 350px;
+        }
+    }
+    .skil_right{
+        .pi{
+            padding-bottom: 50px;
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+            font-size: 15px;
+            position: relative;
+            i{
+                margin-right: 16px;
+            }
+
+            &::before{
+              content: "";
+              position: absolute;
+              bottom: 0;
+              height: 30px;
+              width: 100%;
+              background-color: rgb(165, 164, 164);
+            }
+        }
+        .pi1{
+            &::after{
+                content: "90%";
+                position: absolute;
+                bottom: 0;
+                font-family: "Georgia";
+                font-size: 15px;
+                height: 30px;
+                width: 90%;
+                background-color: $bgc;
+                color: $color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .pi2{
+            &::after{
+                content: "85%";
+                position: absolute;
+                bottom: 0;
+                font-family: "Georgia";
+                font-size: 15px;
+                height: 30px;
+                width: 85%;
+                background-color: $bgc;
+                color: $color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .pi3{
+            &::after{
+                content: "75%";
+                position: absolute;
+                bottom: 0;
+                font-family: "Georgia";
+                font-size: 15px;
+                height: 30px;
+                width: 75%;
+                background-color: $bgc;
+                color: $color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
